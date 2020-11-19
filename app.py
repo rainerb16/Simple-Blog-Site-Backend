@@ -20,7 +20,7 @@ def blogPost():
             cursor.execute("SELECT * FROM posts")
             blog_posts = cursor.fetchall()
         except Exception as error:
-            print("Something went wrong (not good practice): ")
+            print("Something went wrong... ")
             print(error)
         finally:
             if(cursor != None):
@@ -46,7 +46,7 @@ def blogPost():
             conn.commit()
             rows = cursor.rowcount
         except Exception as error:
-            print("Something went wrong (not good practice): ")
+            print("Something went wrong... ")
             print(error)
         finally:
             if(cursor != None):
@@ -75,7 +75,7 @@ def blogPost():
             conn.commit()
             rows = cursor.rowcount
         except Exception as error:
-            print("Something went wrong (not good practice): ")
+            print("Something went wrong... ")
             print(error)
         finally:
             if(cursor != None):
@@ -99,7 +99,7 @@ def blogPost():
             conn.commit()
             rows = cursor.rowcount
         except Exception as error:
-            print("Something went wrong (not good practice): ")
+            print("Something went wrong... ")
             print(error)
         finally:
             if(cursor != None):
