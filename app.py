@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route('/blogs', methods=['GET', 'POST', 'PATCH', 'DELETE'])
+@app.route('/api/blogs', methods=['GET', 'POST', 'PATCH', 'DELETE'])
 def blogPost():
     if request.method == 'GET':
         conn = None
